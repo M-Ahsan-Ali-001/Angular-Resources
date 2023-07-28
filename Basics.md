@@ -4,5 +4,51 @@ interface ObjectR{
 [key : string] :any;
 
 }
-// work as object in js but type is strict
+// work like objects in JS but type is strict
+~~~
+
+# Simple Class and Functions
+~~~
+export class CoursesComponent {
+  list = ["gogle", "fox", "Nmap"];
+  dict:ObjectR = {
+    "gogle": 0,
+    "fox": 1,
+    "Nmap": 2
+  };
+  dictKeys: string[] = [];
+
+  x:any;
+
+  constructor() {
+    // Get the keys of the dict object and store them in dictKeys array
+    this.dictKeys = Object.keys(this.dict);
+  this.x =9;
+  }
+
+  func(item: string) {
+    return `${item}`;
+  }
+
+  OnClick(key:string) {
+    alert(this.dict[key]);
+
+  }
+}
+
+
+~~~
+
+
+# Components
+~~~
+
+@Component({
+  selector: 'courses',
+  template: `
+    <div *ngFor="let key of dictKeys">
+      <h2 (click)="OnClick(key)">{{ func(key) }}</h2>
+    </div>
+  `
+})
 ~~~
