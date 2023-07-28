@@ -1,4 +1,4 @@
-#Interface
+## Interface
 """
 interface ObjectR{
 [key : string] :any;
