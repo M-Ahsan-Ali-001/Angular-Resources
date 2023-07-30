@@ -52,3 +52,15 @@ export class CoursesComponent {
   `
 })
 ~~~
+
+
+
+# Create a Service
+~~~
+
+// create a new file with a name and extension like comp.service.ts
+// import the service to the app.modules.ts in provider array
+//simple export class is used.
+// try to access the srevice using  class constructure it avoid coupling issues and best fot unit testing
+
+~~~
