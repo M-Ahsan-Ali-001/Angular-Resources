@@ -1,6 +1,7 @@
 # Create New Project
 ~~~
-ng new projectname
+ng new projectname #for standalone project (no NG Module ....)
+ng new projectname --no-standalone
 ~~~
 
 # Start the server
