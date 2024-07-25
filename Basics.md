@@ -57,7 +57,7 @@ export class CoursesComponent {
 
 # Create a Service
 ~~~
-
+// A service is an Angular Component for creating  Components that can be used by angular files using dependency injection
 // create a new file with a name and extension like comp.service.ts
 // import the service to the app.modules.ts in provider array
 //simple export class is used.
