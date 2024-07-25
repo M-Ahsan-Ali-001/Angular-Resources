@@ -64,3 +64,27 @@ export class CoursesComponent {
 // try to access the srevice using  class constructure it avoid coupling issues and best fot unit testing
 
 ~~~
+
+# Angular Built-In Animation
+~~~
+@Component({
+  selector: 'MainBody',
+  templateUrl: './mainnbody.component.html',
+  styleUrls: ['./mainnbody.component.css'], 
+  animations: [
+    trigger('fadeAnimation', [
+     
+      state('hidden', style({ opacity: 0 })),
+      state('visible', style({ opacity: 1 })),
+      transition('visible => hidden', [
+        animate('500ms ease-out')
+      ]),
+      transition('hidden => visible', [
+        animate('500ms ease-out')
+      ]),
+    ])
+  ]
+})
+
+// developer can use these animation functions to create animations
+~~~
