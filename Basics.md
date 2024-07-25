@@ -88,3 +88,18 @@ export class CoursesComponent {
 
 // developer can use these animation functions to create animations
 ~~~
+
+# Directives
+~~~
+Some of the most common structural directives are:
+
+`*ngIf`: This directive conditionally renders an element based on an expression.
+`*ngFor`: This directive iterates over an array and renders an element for each item in the array.
+`*ngSwitch`: This directive renders different elements based on the value of an expression.
+
+Some of the most common attribute directives are:
+
+`ngClass`: This directive adds or removes CSS classes based on an expression.
+`ngStyle`: This directive sets CSS properties based on an expression.
+`ngClick`: This directive listens for a click event and executes a function.
+~~~
